@@ -1,0 +1,355 @@
+
+<?php/*Template Name: love*/?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>生日快乐</title>
+<meta name="keywords" content="亲爱的ZD，我爱你" />
+<meta name="description" content="程序员有属于自己的表白方式，我们不懂浪漫，但我们也会讨媳妇欢心。" />
+<meta name="robots" content="follow, all" />
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon" href="http://mmrslgo.com/wp-content/uploads/2015/07/w-logo-blue.png" />
+  
+  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+  
+  <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/style_phone.css" type="text/css" media="all">
+  <link href="css/prettyPhoto.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/jquery.min.js" ></script>
+  <script type="text/javascript" src="js/content_switch.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/cScroll.js"></script>
+  <!-- script type="text/javascript" src="./js/jquery.fancybox-1.3.4.js"></script-->
+  <script src="js/jquery.cycle.all.latest.js" type="text/javascript"></script>
+  <script src="js/jquery.color.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
+  <script src="js/prettyPhoto.js"></script>
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="./js/html5.js"></script>
+    <link rel="stylesheet" href="./css/ie.css" type="text/css" media="all">
+  <![endif]-->
+	<!--[if lt IE 8]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+		</div>
+	<![endif]-->
+
+    <script>
+        function checkhtml5()
+        {
+            if ($.browser.msie  && parseInt($.browser.version, 10) < 9) {
+                document.body.innerHTML="<div style=' clear: both; text-align:center; position: relative; height: 50px; margin-top: 30px; padding: 20px; background-color: red; color: white; font-size:20px;'>你的浏览器非常落后，不支持 HTML5!<br/>请使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+ 其中任意一款浏览器访问此页面。</a></div>";
+
+            }
+        }
+    </script>
+    <style>
+        a.wb_sina {
+            float:left;
+            margin-top:20px;
+            margin-left:15px;
+            display:inline-block;
+            padding:4px 10px;
+            border-radius:3px;
+            background-color:#e55345;
+            background-image:-moz-linear-gradient(top,#e96249,#e03c40);
+            background-image:-ms-linear-gradient(top,#e96249,#e03c40);
+            background-image:-webkit-gradient(linear,0 0,0 100%,from(#e96249),to(#e03c40));
+            background-image:-webkit-linear-gradient(top,#e96249,#e03c40);
+            background-image:-o-linear-gradient(top,#e96249,#e03c40);
+            background-image:linear-gradient(top,#e96249,#e03c40);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e96249',endColorstr='#e03c40',GradientType=0);
+            background-repeat:repeat-x;
+            text-shadow:0 -1px 0 rgba(0,0,0,.5);
+            border:1px solid #cf2b28;
+            color:#fff!important;
+            box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
+        }
+        a.wb_sina:hover {
+            background-image:-moz-linear-gradient(top,#e03c40,#e96249);
+            background-image:-ms-linear-gradient(top,#e03c40,#e96249);
+            background-image:-webkit-gradient(linear,0 0,0 100%,from(#e03c40),to(#e96249));
+            background-image:-webkit-linear-gradient(top,#e03c40,#e96249);
+            background-image:-o-linear-gradient(top,#e03c40,#e96249);
+            background-image:linear-gradient(top,#e03c40,#e96249);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e03c40',endColorstr='#e96249',GradientType=0);
+        }
+        a.wb_sina span {
+            display:inline-block;
+            vertical-align:-5px;
+            margin-right:7px;
+            height:20px;
+            width:24px;
+            background:url(images/weibo.png) no-repeat;
+        }
+        a.wb_tencent {
+            float:left;
+            margin-top:20px;
+            margin-left:15px;
+            display:inline-block;
+            padding:4px 10px;
+            border-radius:3px;
+            background-color:#0e7fcc;
+            background-image:-moz-linear-gradient(top,#1288d4,#0771c1);
+            background-image:-ms-linear-gradient(top,#1288d4,#0771c1);
+            background-image:-webkit-gradient(linear,0 0,0 100%,from(#1288d4),to(#0771c1));
+            background-image:-webkit-linear-gradient(top,#1288d4,#0771c1);
+            background-image:-o-linear-gradient(top,#1288d4,#0771c1);
+            background-image:linear-gradient(top,#1288d4,#0771c1);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1288d4',endColorstr='#0771c1',GradientType=0);
+            background-repeat:repeat-x;
+            text-shadow:0 -1px 0 rgba(0,0,0,.5);
+            border:1px solid #0D6EB8;
+            color:#fff!important;
+            box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 1px 0 rgba(0,0,0,.2);
+        }
+        a.wb_tencent:hover {
+            background-color:#0e7fcc;
+            background-image:-moz-linear-gradient(top,#0771c1,#1288d4);
+            background-image:-ms-linear-gradient(top,#0771c1,#1288d4);
+            background-image:-webkit-gradient(linear,0 0,0 100%,from(#0771c1),to(#1288d4));
+            background-image:-webkit-linear-gradient(top,#0771c1,#1288d4);
+            background-image:-o-linear-gradient(top,#0771c1,#1288d4);
+            background-image:linear-gradient(top,#0771c1,#1288d4);
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0771c1',endColorstr='#1288d4',GradientType=0);
+        }
+        a.wb_tencent span {
+            display:inline-block;
+            vertical-align:-5px;
+            margin-right:7px;
+            height:20px;
+            width:24px;
+            background:url(images/weibo.png) no-repeat 0 -20px;
+        }
+        #abox
+        {
+            position: fixed;
+            _position: absolute;
+            right: 15px;
+            z-index: 99999999;
+        }
+    </style>
+</head>
+
+<body onload="checkhtml5()">
+<!--div id="abox">
+    <a href="http://weibo.com/2661583373/profile?topnav=1&wvr=6" target="_blank" class="wb_sina"><span></span>新浪微博</a>
+    <a href="http://t.qq.com/wudi56782010?preview" target="_blank" class="wb_tencent"><span></span>腾讯微博</a>
+</div-->
+<div class="page_spinner">
+    <div></div>
+</div>
+<div class="over">
+	<div class="centre">
+		<div class="main">
+			<!--header -->
+			<header>
+				<h1><span id="logo"><img src="images/logo1.png" alt="" usemap="#logo"></span></h1>
+				<nav class="menu">
+					<ul id="menu">
+						<li id="nav1"><img src="images/nav1.png" alt=""><span>爱的宣誓</span></li>
+						<li id="nav2"><img src="images/nav2.png" alt=""><span>我们的故事</span></li>
+						<li id="nav3"><img src="images/nav3.png" alt=""><span>家法家规</span></li>
+						<li id="nav4"><img src="images/nav4.png" alt=""><span>留言祝福</span></li>
+						<li id="nav5"><img src="images/nav5.png" alt=""><span>爱的映像</span></li>
+						<li id="nav6"><img src="images/nav6.png" alt=""><span>时光沙漏</span></li>
+					</ul>
+				</nav>
+				<img src="images/spacer.gif" alt="" id="navigation" usemap="#navigation">
+				<map name="logo" class="map_logo"></map>
+				<map name="navigation" class="navigation"></map>
+			</header>
+			<!--header end-->
+			<!--content -->
+			<map name="back" class="map_back"></map>
+			<article id="content">
+				<ul>
+					<li id="page_Home">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav1.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>爱的宣誓</h2>
+                            人物：马士凯 &amp; 朱丹<br />
+                            生死契阔，与子成说。<br />
+                            执子之手，与子偕老。<br />
+                            一生不长，我永伴你左右。<br />
+                            日子很多，我们一起面对生活的坎坎坷坷。<br />
+                            
+
+						</div>
+					</li>
+					<li id="page_About">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav2.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>我们的故事</h2>
+							<div class="relative">
+								<div class="scroll">
+                                    <span>人物：马士凯 &amp; 朱丹</span>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;相识：是在2007年春天，高一分班后的一次考试自主选座，成了前后桌。那时的你英语超级厉害，我的数学还不错，你时常回头问一些数学题，所以我多了个称号“师傅”。</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;一：在09年大学上大学时爆发了H1N1，你又感冒了，就被隔离了。在隔离时每天熄灯后都能和你电话联系，那是大学里最开心的一段时间，每天都期待着熄灯。有一天我和室友在校门口吃饭，刚拿起饭碗接到你的电话，你只说一句话：师傅我想你了，没别的事了。当时我觉得虽然我在室内，但是阳光依然照满全身，最幸福的时刻。12年清明借着去同学家的幌子想看你，在送你回宿舍的楼下想表白，但是怂了。13年的4月21日，我吓唬你说：不是恋人可能就不再联系了，你终于同意了，哇哈哈哈，开心的我在澡堂换衣间，衣服都脱了，但是没去洗澡，坐着傻乐。</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;二：你从清远转战到了大连，在14年APEC会议期间，我去大连看你，再次表白，幸福的我一夜未睡，此时14年11.10号。</p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;三：转眼来到18年3月的合肥，虽然没有见证人，但是你还是答应了我的求婚，OMG!!!(1440°前后空翻+满眼幸福泪，谁能比我还幸福)OMG!!!朝思暮想的女神同意了我的求婚，此时2018年3月24日。。。幸福在继续</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Talk">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav3.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>家法家规</h2>
+                            <div class="relative">
+                                <div class="scroll">
+                                    <div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">1. 在这里师傅听徒弟的，所以掌柜的是徒弟。</div>
+                                    <div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">2. 徒弟不需要做任何的家务（“任何”俩字划重点，考试要考）。</div>
+                                    <div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">3. 徒弟需要什么只需要说话，最好只是一个眼神（"眼神"重点观察）。</div>
+                                    <div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">----未完，看掌柜的心情随时添加----</div>
+
+                                </div>
+                            </div>
+						</div>
+					</li>
+					<li id="page_Message">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav4.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>留言祝福</h2>
+							<h6 style="color:red ">只支持微博登录</h6>
+                            <div class="relative">
+                                <div class="scroll">
+									<!-- UY BEGIN -->
+									<div id="uyan_frame"></div>
+									<script type="text/javascript" src="js/uyan.js"></script>
+									<!-- UY END -->
+									<!--<div style="width:100%;float: left; border-bottom: 1px solid #CCCCCC;">请先预留红包，等通知。</div>-->
+                                </div>
+                            </div>
+						</div>
+					</li>
+					<li id="page_Blog">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav5.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>爱的映像</h2>
+							<div class="relative">
+								<div class="scroll">
+									<ul class="gallery fancybox">
+                                        <li style="line-height:120px"><a href="pic/uploadimage/1.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/1_1.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/2.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/2_2.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/3.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/3_3.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/4.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/4_4.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/5.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/5_5.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/6.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/6_6.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/7.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/7_7.jpg" alt=""></a></li>
+                                        <li style="line-height:120px"><a href="pic/uploadimage/8.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/8_8.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/9.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/9_9.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/10.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/10_10.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/11.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/11_11.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/12.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/12_12.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/13.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/13_13.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/14.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/14_14.jpg" alt=""></a></li>
+										<!--li style="line-height:120px"><a href="pic/uploadimage/15.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/15_15.jpg" alt=""></a></li>
+										<li style="line-height:120px"><a href="pic/uploadimage/16.jpg" rel="prettyPhoto[gallery1]"><img src="pic/uploadimage/16_16.jpg" alt=""></a></li-->
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="page_Time">
+						<img src="images/bg_content.png" alt="" class="bg_cont">
+						<span class="back"><img src="images/nav6.png" alt="" usemap="#back"><a href="#close">返回</a></span>
+						<div class="pad">
+							<h2>时光沙漏</h2>
+                            <div id="loveHeart" style="margin-top: 30px;font-size: 25px;">
+                                        <span style="">亲爱的, 你知道我们相爱了多久吗</span>
+                                        <div id="elapseClock" style="margin: 10px 0px 10px 0px;"></div>
+
+                                <img src="images/1.gif" />　　　　<img src="images/2.gif" /><br/><br/>
+                                    <div id="loveu">
+                                        爱你，至死不渝。<br/>
+                                        <div class="signature" style="float: right; margin-right: 50px;">- 马士凯</div>
+                                    </div>
+                                </div>
+                            </div>
+
+						</div>
+					</li>
+					
+					
+				</ul>
+			</article>
+			<!--content end-->
+		</div>
+	</div>
+	<div class="bg1">	
+		<div class="main">
+			<!--footer -->
+			<footer style="line-height:20px">
+                <div id="copyright">
+                    最真挚的祝福送给亲爱的朱丹，生日快乐！
+                    <object type="application/x-shockwave-flash" data="dewplayer-mini.swf?mp3=js/MerryYou.mp3&amp;autostart=1&amp;autoreplay=1" width="19" height="20" id="dewplayer-mini">
+                    <param name="wmode" value="transparent">
+                    <param name="movie" value="dewplayer-mini.swf?mp3=js/MerryYou.mp3&amp;autostart=1&amp;autoreplay=1">
+                    <embed src="dewplayer-mini.swf?mp3=js/MerryYou.mp3&amp;autostart=1&amp;autoreplay=1" width="20" height="20" wmode="transparent"></embed>
+                </object>
+                </div>
+				<!-- {%FOOTER_LINK} -->
+			</footer>
+			<!--footer end-->
+		</div>
+	</div>
+</div>
+<script>
+$(window).load(function() {	
+	$('.page_spinner').fadeOut();
+	$('body').css({overflow:'visible'});
+	
+})
+</script>
+<script>
+    $(window).load(function (){
+        var biz_name = '';
+        var biz_url = '';
+        $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:'<a href="' + biz_url + '" target="_blank">' + biz_name + '</a>',animation_speed:'normal',theme:'dark_square',slideshow:5000, autoplay_slideshow: false});
+    });
+</script>
+
+<script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date();
+    together.setFullYear(2013, 4, 21);
+    together.setHours(14);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 3000);
+
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+</script>
+<!--coded by koma-->
+
+<!--LIVEDEMO_00 -->
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+</body>
+</html>
